@@ -1,31 +1,29 @@
 ﻿using UnityEngine;
+
 namespace Code
 {
-    public class PlayerMove : MonoBehaviour
+    public class PlayerMove
     {
-        [SerializeField]private float _speedPlayer;
-        [SerializeField]private Transform _transformPlayer;
-        private float _deltaTimeSpeed;
-        private Vector3 _movePlayer;
-        private PlayerJump _jumpPlayer;
-        private PlayerMove _playerMove;
+        private float _speed;
+        private Vector3 _move;
+        private Rigidbody _rigidbody;
 
-        public PlayerMove(Transform transform, float speed)
-        {
-            _speedPlayer = speed;
-            _transformPlayer = transform;
-        }
-        private void Awake()
-        {
-            _playerMove = new PlayerMove(_transformPlayer, _speedPlayer);
-        }
+        public float Speed { get => _speed; set => _speed = value; }
 
-        private void Update()
+        public Vector3 MovePlayer { get => _move; set => _move = value; }
+
+        public Rigidbody Rigidbody { get => _rigidbody; set => _rigidbody = value; }
+
+        public PlayerMove(float speed, Vector3 vector3, Rigidbody rigidbody)
         {
-            _playerMove._movePlayer.Set(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            _deltaTimeSpeed = Time.deltaTime * _speedPlayer;
-            _playerMove._transformPlayer.Translate(  _playerMove._movePlayer * _deltaTimeSpeed, Space.World);
-            transform.localPosition += _movePlayer;
+            Speed = speed;
+            MovePlayer = vector3;
+            Rigidbody = rigidbody;
+        }
+        public void Move(Vector3 move, float speed, Rigidbody rigidbody)
+        {
+            move += new Vector3(Input.GetAxis(CONSTANT_NAME.Left), 0, Input.GetAxis(CONSTANT_NAME.Rigth));
+            rigidbody.AddForce(move * speed, ForceMode.Force);
         }
     }
 }
