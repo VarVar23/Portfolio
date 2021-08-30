@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 6
-  _move: {x: 0, y: 0, z: 0}
+  _force: 10
   _rigidbody: {fileID: 1611391082}
 --- !u!54 &1611391082
 Rigidbody:

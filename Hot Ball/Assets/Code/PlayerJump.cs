@@ -1,27 +1,13 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Code
 {
-    public class PlayerJump : PlayerMove
+    public class PlayerJump
     {
-        [SerializeField] private float _jumpForce;
-        private Vector3 _jumpMove;
-        private float _speedPlayer;
-        private Transform _transformPlayer;
-        public PlayerJump(Transform transform, float speed, float jumpForce) : base(transform, speed)
+        public void JumpPlayer(Vector3 move, float jump, Rigidbody rigidbody)
         {
-            _jumpForce = jumpForce;
-        }
-
-        private void OnCollisionStay(Collision other)
-        {
-            if (gameObject.CompareTag("Player") && transform.position.y < 5)
-            {
-                _jumpMove.Set(0, Input.GetAxis("Jump"), 0);
-                transform.Translate(0,_jumpMove.y*_jumpForce,0);
-                transform.localPosition += _jumpMove;
-            }
+            move += new Vector3(0, Input.GetAxis(InputManager.JUMP), 0);
+            rigidbody.AddForce(move,ForceMode.Impulse);
         }
     }
 }
