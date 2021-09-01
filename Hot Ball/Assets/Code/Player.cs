@@ -7,12 +7,22 @@ namespace Code
         private float _speed;
         private float _force;
         private Rigidbody _rigidbody;
+        public Player(float speed, float force, Rigidbody rigidbody)
+        {
+            _speed = speed;
+            _force = force;
+            _rigidbody = rigidbody;
+        }        
         private PlayerMove _playerMove = new PlayerMove();
         private PlayerJump _playerJump = new PlayerJump();
-       public void Update(float speed, Rigidbody rigidbody, float force)
+       public void Update(Player player)
         {
-            _playerMove.Move(new Vector3(),speed, rigidbody);
-            _playerJump.JumpPlayer(new Vector3(),force,rigidbody);
+            _playerJump.JumpPlayer(player._force,player._rigidbody);
         }
+
+       public void FixedUpdate(Player player)
+       {
+           _playerMove.Move(player._speed, player._rigidbody);
+       }
     }
 }

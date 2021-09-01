@@ -4,10 +4,10 @@ namespace Code
 {
     public class PlayerJump
     {
-        public void JumpPlayer(Vector3 move, float jump, Rigidbody rigidbody)
+        Vector3 a = Vector3.up;
+        public void JumpPlayer(float jumpForce,Rigidbody rigidbody)
         {
-            move += new Vector3(0, Input.GetAxis(InputManager.JUMP), 0);
-            rigidbody.AddForce(move,ForceMode.Impulse);
+            rigidbody.AddForce(a * (Input.GetAxis(InputManager.JUMP) * jumpForce));
         }
     }
 }

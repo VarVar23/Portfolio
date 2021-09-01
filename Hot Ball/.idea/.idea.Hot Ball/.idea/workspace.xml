@@ -34,11 +34,11 @@
         <option value="$PROJECT_DIR$/Assets/Code/ControllerPlayer/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Vector.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/CONSTANT_NAME.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/PlayerMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/InputManaget.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/InputManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/PlayerJump.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/PlayerJump.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/PlayerMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/InitGame.cs" />
       </list>
     </option>
@@ -88,6 +88,8 @@
       <workItem from="1630321645934" duration="7899000" />
       <workItem from="1630337699533" duration="3349000" />
       <workItem from="1630341582243" duration="2076000" />
+      <workItem from="1630345711328" duration="2000" />
+      <workItem from="1630481344670" duration="2854000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Code
 {
@@ -11,13 +12,17 @@ namespace Code
 
         private void Awake()
         {
-            _player = new Player();
-            
+            _player = new Player(_speed,_force,_rigidbody);
         }
 
         private void Update()
         {
-            _player.Update(_speed,_rigidbody,_force);
+            _player.Update(_player);
+        }
+
+        private void FixedUpdate()
+        {
+            _player.FixedUpdate(_player);
         }
     }
 }
