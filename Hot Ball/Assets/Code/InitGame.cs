@@ -8,7 +8,7 @@ namespace Code
         [SerializeField]private float _speed;
         [SerializeField]private float _force;
         [SerializeField]private Rigidbody _rigidbody;
-        private Player _player;
+        protected Player _player;
 
         private void Awake()
         {
@@ -23,6 +23,7 @@ namespace Code
         private void FixedUpdate()
         {
             _player.FixedUpdate(_player);
+            
         }
     }
 }
