@@ -4,15 +4,29 @@ using TMPro;
 public class Starter : MonoBehaviour
 {
     [SerializeField] private GameObject _textMeshPro;
-    private Score score;
+    private Score _score;
 
     private void Start()
     {
-        score = new Score(_textMeshPro.GetComponent<TextMeshProUGUI>());
+        _score = new Score(_textMeshPro.GetComponent<TextMeshProUGUI>());
     }
 
     private void FixedUpdate()
     {
-        score.FixedUpdate();
+        _score.FixedUpdate();
+    }
+
+    private void Update() // Временный код, для проверки сохранения счета! Когда-нибудь сохранение лучшего счета будет происходить после смерти игрока
+    {
+        if(Input.GetKeyDown(KeyCode.S))
+        {
+            _score.Save();
+            Debug.Log("Сохранилось");
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Debug.Log(_score.Load());
+        }
     }
 }

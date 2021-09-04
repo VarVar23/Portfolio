@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -71,10 +71,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 16006, y: 14042}
+  m_MinSize: {x: 880, y: 492}
+  m_MaxSize: {x: 16005, y: 14042}
   vertical: 0
-  controlID: 101
+  controlID: 52
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 102
+  controlID: 123
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 76
+  controlID: 124
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -364,11 +364,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/TextMesh Pro
+    - Assets/Code/Score
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/TextMesh Pro
+  - Assets/Code/Score
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "D:\\\u0420\u0435\u043F\u043E\u0437\u0438\u0442\u043E\u0440\u0438\u0438\\Portfolio\\Hot
     Ball"
@@ -376,9 +376,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60340000
-    m_LastClickedID: 13408
-    m_ExpandedIDs: 00000000043400000a3400006034000000ca9a3b
+    m_SelectedIDs: 78340000
+    m_LastClickedID: 13432
+    m_ExpandedIDs: 000000005c3400007034000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -406,7 +406,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000004340000
+    m_ExpandedIDs: 000000005c340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -529,9 +529,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 8c2c0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 68f9ffff68fbffff
+      m_ExpandedIDs: 64fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -643,9 +643,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.013185558, y: 0.026091918, z: 0.00034423522, w: -0.9995725}
   m_Size:
-    m_Target: 10
+    m_Target: 17.72196
     speed: 2
-    m_Value: 10
+    m_Value: 17.72196
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -785,6 +785,6 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 648
-    width: 1461
+    width: 1366
     height: 351
   m_ViewDataDictionary: {fileID: 0}
