@@ -4,6 +4,7 @@ namespace Code
 {
     public class Player
     {
+        internal Health _hp;
         private float _speed;
         private float _force;
         private Rigidbody _rigidbody;
@@ -12,6 +13,7 @@ namespace Code
             _speed = speed;
             _force = force;
             _rigidbody = rigidbody;
+            _hp = new Health(InputManager.HP,InputManager.CURRENTHP);
         }        
         private PlayerMove _playerMove = new PlayerMove();
         private PlayerJump _playerJump = new PlayerJump();

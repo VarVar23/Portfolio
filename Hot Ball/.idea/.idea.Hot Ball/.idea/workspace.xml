@@ -35,11 +35,13 @@
         <option value="$PROJECT_DIR$/Assets/Code/Vector.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/CONSTANT_NAME.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/InputManaget.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/PlayerJump.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/PlayerMove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/InitGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/InitGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Death.cs" />
       </list>
     </option>
   </component>
@@ -91,6 +93,7 @@
       <workItem from="1630345711328" duration="2000" />
       <workItem from="1630481344670" duration="2854000" />
       <workItem from="1630484862882" duration="3662000" />
+      <workItem from="1630850373180" duration="1558000" />
     </task>
     <servers />
   </component>
@@ -183,5 +186,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="778" height="243" key="GridCell.Tab.3.right/0.0.1600.860@0.0.1600.860" timestamp="1630341081307" />
+    <state x="510" y="108" key="RiderGenerateDialog" timestamp="1630851042155">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="510" y="108" key="RiderGenerateDialog/0.0.1600.860@0.0.1600.860" timestamp="1630851042155" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1630850749317">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1630850749317" />
   </component>
 </project>
