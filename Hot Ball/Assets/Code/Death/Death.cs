@@ -9,8 +9,7 @@ public sealed class Death
         
         public void DeathPlayer(Player player)
         {
-            player.HpPlayerHealth.PlayerHealth = _valueClass.MinimalHpCurrent;
-            if (player.HpPlayerHealth.PlayerHealth <= 0)
+            if (_valueClass.MinimalHpCurrent == player.HpPlayerHealth.PlayerHealth)
             {
                 Time.timeScale = 0.0f;
                 GameObject.Destroy(Object.FindObjectOfType<InitGame>().Player.PlayerGameObject);
