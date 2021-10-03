@@ -3,7 +3,6 @@
         private int MaxHp;
         private int MixHp;
         private int CurrenHp;
-
         public int PlayerHealth
         {
             get
