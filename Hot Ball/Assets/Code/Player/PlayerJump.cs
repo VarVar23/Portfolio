@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code
-{
-    public class PlayerJump
+public class PlayerJump
     {
         Vector3 move = Vector3.up;
         public void JumpPlayer(float jumpForce,Rigidbody rigidbody)
@@ -12,4 +10,3 @@ namespace Code
             rigidbody.AddForce(move * (_input* jumpForce) , ForceMode.Impulse);
         }
     }
-}

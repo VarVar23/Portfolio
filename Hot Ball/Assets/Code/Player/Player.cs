@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code
-{
-    public class Player
+ public class Player
     {
         private float _playerSpeed;
         private float _jumpForce;
@@ -24,8 +22,7 @@ namespace Code
             _playerSpeed = playerSpeed;
             _jumpForce = jumpForce;
             _playerRigidBody = playerRigidBody;
-        }  
-        
+        }
         private PlayerMove _playerMove = new PlayerMove();
         private PlayerJump _playerJump = new PlayerJump();
        public void Update(Player player)
@@ -38,4 +35,3 @@ namespace Code
            _playerMove.Move(player._playerSpeed, player._playerRigidBody);
        }
     }
-}

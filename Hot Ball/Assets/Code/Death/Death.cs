@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code
-{
-    public sealed class Death
+public sealed class Death
     {
         /// <summary>
         /// класс переменных для выбора значений
@@ -20,4 +18,3 @@ namespace Code
             }
         }
     }
-}

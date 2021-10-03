@@ -1,8 +1,4 @@
-﻿using UnityEngine;
-
-namespace Code
-{
-    public class Health
+﻿public class Health
     {
         private int MaxHp;
         private int MixHp;
@@ -35,4 +31,3 @@ namespace Code
             CurrenHp = currenHp;
         }
     }
-}
