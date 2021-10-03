@@ -3,19 +3,20 @@
 public class CameraOffset
     {
         private Vector3 _positionOffsetCamera;
-        private Transform _transformOffsetCamera;
+        private Vector3 _OffsetCamera;
+        private GameObject _OffsetCameraGameObject;
         private Player _playerPosition;
 
-        public CameraOffset(Player player)
+        public CameraOffset(Player player, Vector3 offset, GameObject offsetCameraGameObject)
         {
             _playerPosition = Object.FindObjectOfType<InitGame>().Player;
-            _positionOffsetCamera = new Vector3(0, 5, -5);
-            _transformOffsetCamera = new RectTransform();
-            _transformOffsetCamera = player.PlayerGameObject.transform;
+            _positionOffsetCamera = offset;
+            _OffsetCameraGameObject = offsetCameraGameObject;
+            _OffsetCamera = _positionOffsetCamera - _playerPosition.PlayerGameObject.transform.position;
         }
 
         public void FollowPlayer()
         {
-            _transformOffsetCamera = _playerPosition.PlayerGameObject.transform; // <- не передаётся позиция
+            _OffsetCameraGameObject.transform.position = _playerPosition.PlayerGameObject.transform.position + _OffsetCamera;
         }
     }
